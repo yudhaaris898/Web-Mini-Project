@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+  </head>
+  <body class="bg-gray-200">
+
+    <!-- Navigation -->
+    <header class="px-6 py-4 bg-sky-900 min-h-[70px]">
+  <div class="flex justify-between items-center text-white">
+    <a href="index.html" class="text-red-500 text-4xl font-bold">
+      MY <span class="text-white font-bold">PROJECT</span>
+    </a>
+
+    <!-- Tombol Hamburger (mobile) -->
+    <button id="menu-btn" class="sm:hidden text-white focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+              d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Menu Desktop -->
+    <nav class="hidden sm:flex text-[22px] space-x-5">
+      <a class="rounded-b-2xl p-3 hover:bg-red-600 font-semibold" href="index.html">Home</a>
+      <a class="rounded-b-2xl p-3 hover:bg-red-600 font-semibold" href="#project">Project</a>
+      <a class="rounded-b-2xl p-3 hover:bg-red-600 font-semibold" href="./contact.html">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Menu Mobile -->
+  <nav id="menu" class="hidden flex-col mt-4 space-y-2 text-center text-white text-xl sm:hidden">
+    <a class="block rounded p-3 hover:bg-red-600 font-semibold" href="./index.html">Home</a>
+    <a class="block rounded p-3 hover:bg-red-600 font-semibold" href="#project">Project</a>
+    <a class="block rounded p-3 hover:bg-red-600 font-semibold" href="./contact.html">Contact</a>
+  </nav>
+</header>
+    <!-- ./Navigation -->
+
+     <!-- Image Header -->
+      <div class="flex flex-col w-full h-[400px] bg-[url('/assets/images/header.jpg')] bg-cover bg-center justify-center font-bold">
+        <div class="text-center m-2 p-2">
+          <p class="text-7xl p-2 max-sm:text-4xl text-gray-700">Mini Project</p>
+          <p class="text-center p-1 text-xl text-gray-600 max-sm:text-lg">
+            Kumpulan project sederhana yang dikembangkan untuk melatih keterampilan pengembangan web
+          </p>
+        </div>
+      </div>
+    <!-- ./ Image Header -->
+
+    <!-- Layout -->
+    <main class="flex flex-col md:flex-row p-4 gap-4">
+      
+      <!-- Sidebar -->
+      <aside class="w-full md:w-1/4">
+        <div class="rounded-t-2xl bg-sky-900">
+          <div class="px-4 py-2">
+            <h2 class="text-base font-semibold text-white">DAFTAR LIST MINI PROJECT</h2>
+          </div>
+        </div>
+        <div class="rounded-b-2xl bg-white" id="project">
+          <div class="px-4 py-2">
+            <ul class="divide-y divide-gray-200">
+              <li class="py-2">
+                <a href="https://yudhaaris898.github.io/MuseumDino_Bootstrap/" target="_blank" class="font-semibold hover:text-red-500">Museum Dino</a>
+              </li>
+              <li class="py-2">
+                <a href="https://yudhaaris898.github.io/PriceTable/" target="_blank" class="font-semibold hover:text-red-500">Price Table</a>
+              </li>
+              <li class="py-2">
+                <a href="https://yudhaaris898.github.io/Dark-Mode-and-Image-Slider-Project/" target="_blank" class="font-semibold hover:text-red-500">Dark mode and Image Slider</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Content -->
+      <section class="w-full md:w-3/4">
+        <!-- Judul -->
+        <div class="h-10 w-full rounded-lg bg-sky-900 mx-auto mb-2">
+          <div class="py-1">
+            <h2 class="text-base md:text-lg text-center font-semibold text-white">MINI PROJECT</h2>
+          </div>
+        </div>
+
+        <!-- Grid Project -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+          
+          <!-- Project 1 -->
+          <div class="rounded-xl bg-white shadow-md overflow-hidden">
+            <div class="p-2 justify-center text-center text-white bg-sky-900">
+              <a href="https://yudhaaris898.github.io/MuseumDino_Bootstrap/" target="_blank" class="font-semibold hover:text-red-500">Museum Dino</a>
+            </div>
+            <div class="bg-black rounded-t-xl">
+              <img src="../assets/images/proyek/museumdino.webp"
+                   alt="proyek1
+                   class="object-cover w-full h-full">
+            </div>
+              <p class="text-sm text-center justify-center p-3 max-sm:hidden">
+                Website bertema museum dinosaurus dengan tampilan simpel dan responsif
+              </p>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="rounded-xl bg-white shadow-md overflow-hidden">
+            <div class="p-2 justify-center text-center text-white bg-sky-900">
+              <a href="https://yudhaaris898.github.io/PriceTable/" target="_blank" class="font-semibold hover:text-red-500">Price Table</a>
+            </div>
+            <div class="bg-black rounded-t-xl">
+              <img src="../assets/images/proyek/pricetable.webp"
+                   alt="proyek2"
+                   class="object-cover w-full h-full">
+            </div>
+              <p class="text-sm text-center justify-center p-3 max-sm:hidden">
+                Komponen web sederhana untuk menampilkan paket harga dengan desain responsif dan interaktif
+              </p>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="rounded-xl bg-white shadow-md overflow-hidden">
+            <div class="p-2 justify-center text-center text-white bg-sky-900">
+              <a href="https://yudhaaris898.github.io/Dark-Mode-and-Image-Slider-Project/" target="_blank" class="font-semibold hover:text-red-500">Dark mode and Image Slider</a>
+            </div>
+            <div class="bg-black rounded-t-xl">
+              <img src="../assets/images/proyek/darkslidermode.webp"
+                   alt="proyek3"
+                   class="object-cover w-full h-full">
+            </div>
+              <p class="text-sm text-center justify-center p-3 max-sm:hidden">
+                Website interaktif dengan fitur toggle dark mode dan slider gambar responsif
+              </p>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <div class="mt-12 py-1 flex md:flex-row flex-col gap-3 md:gap-0 justify-between items-center bg-sky-950 text-white">
+        <a href="index.html" class="px-6 py-2 text-2xl font-bold">
+            <span class="text-red-500">MY</span> PROJECT</a>
+        <div class="flex gap-7">
+            <a class="rounded-t-2xl p-3 hover:bg-red-600 font-semibold" href="./index.html">Home</a>
+            <a class="rounded-t-2xl p-3 hover:bg-red-600 font-semibold" href="#project">Project</a>
+            <a class="rounded-t-2xl p-3 hover:bg-red-600 font-semibold" href="./contact.html">Contact</a>
+        </div>
+        <div class="flex items-center gap-3 px-6 py-2">
+            <a href="https://github.com/yudhaaris898" target="_blank"><i class="ri-github-fill ri-2x"></i></a>
+            <a href="https://www.instagram.com/yudaris_047/" target="_blank"><i class="ri-instagram-fill ri-2x"></i></a>
+            <a href="https://www.linkedin.com/in/yudha-aris-433b72374/" target="_blank"><i class="ri-linkedin-fill ri-2x"></i></a>
+        </div>
+    </div>
+    <!-- ./ Footer -->
+  <script src="./script.js"></script>
+  </body>
+</html>
